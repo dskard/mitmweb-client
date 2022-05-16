@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mitmweb-client"
+version = "0.1.0"
+description = ""
+authors = ["dskard"]
+license = "MIT"
+readme = "README.md"
+homepage = "http://github.com/dskard/mitmweb-client"
+repository = "http://github.com/dskard/mitmweb-client"
+packages = [
+    {include = "mitmweb_client", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pytest = "^7.1.2"
+pdbpp = "^0.10.3"
+requests-mock = "^1.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
