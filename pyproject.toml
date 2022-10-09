@@ -27,7 +27,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.semantic_release]
 version_variable = [
-    "src/mitmproxy_client/__init__.py:__version__"
+    "src/mitmweb_client/__init__.py:__version__"
 ]
 version_toml = [
     "pyproject.toml:tool.poetry.version"

@@ -47,7 +47,7 @@ class MitmWebClient:
 
     def _check_status(self, response):
         if response.status_code >= 400:
-            raise ManagerITMClientException(response)
+            raise MitmWebClientException(response)
 
     def _http(self, method, uri, **kwargs):
 
